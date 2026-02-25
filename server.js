@@ -18,7 +18,10 @@ const MODEL_MAPPING = {
   'gpt-4o': 'meta/llama-3.1-70b-instruct',
   'claude-3-opus': 'meta/llama-3.1-70b-instruct',
   'claude-3-sonnet': 'meta/llama-3.1-8b-instruct',
-  'glm-4': 'z-ai/glm4.7'
+  'glm-4': 'z-ai/glm4.7',
+  'deepseek': 'deepseek-ai/deepseek-v3.2',
+  'glm-5': 'z-ai/glm5',
+  'kimi': 'moonshotai/kimi-k2-thinking',
 };
 
 app.get('/', (req, res) => {
