@@ -30,6 +30,14 @@ const MODEL_MAPPING = {
   'claude-3-sonnet': 'openai/gpt-oss-20b',
   'gemini-pro': 'qwen/qwen3-next-80b-a3b-thinking' 
 };
+app.get('/', (req, res) => res.json({ status: 'ok', service: 'OpenAI to NVIDIA NIM Proxy' }));
+app.get('/v1', (req, res) => res.json({ status: 'ok', service: 'OpenAI to NVIDIA NIM Proxy' }));
+```
+4. Click **"Commit changes"**
+
+Railway will auto-redeploy in about 1-2 minutes. Then in Janitor AI, set the **Base URL** back to:
+```
+https://openai-nim-proxy-production-7e3d.up.railway.app
 
 // Health check endpoint
 app.get('/health', (req, res) => {
