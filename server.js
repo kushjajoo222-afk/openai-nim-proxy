@@ -17,7 +17,8 @@ const MODEL_MAPPING = {
   'gpt-4-turbo': 'meta/llama-3.1-70b-instruct',
   'gpt-4o': 'meta/llama-3.1-70b-instruct',
   'claude-3-opus': 'meta/llama-3.1-70b-instruct',
-  'claude-3-sonnet': 'meta/llama-3.1-8b-instruct'
+  'claude-3-sonnet': 'meta/llama-3.1-8b-instruct',
+  'glm-4': 'z-ai/glm4.7'
 };
 
 app.get('/', (req, res) => {
